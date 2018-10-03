@@ -1,4 +1,4 @@
-/*
+/**
  * Tone sequencer by Craig McIntyre
  * Released under the Unlicense.
  * 
@@ -12,9 +12,9 @@
  *      Buttons for wider key range?
  *      Granular effects on tone?
  *  
- *  .......................................................0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+ *
  *  
- */
+ **/
 
 
 byte tonePots[] = {A0, A1, A2, A3};
@@ -95,7 +95,7 @@ void playTone(int sensorValue, int rest, int key[9]) {
     tone(piezoPin, key[2], rest);
   }
 
-  else if (sensorValue >= 400 && sensorValue < 600) {
+  else if (sensorValue >= 400 && sensorValue < 500) {
     tone(piezoPin, key[3], rest);
   }
 
